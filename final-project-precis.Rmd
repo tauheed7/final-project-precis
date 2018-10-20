@@ -1,0 +1,24 @@
+---
+title: "final-project-precis"
+author: "Tauheed"
+date: "October 19, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readr)
+spotifydata <- read_csv("songs_18yrs_spotify_data_v5.csv")
+```
+
+
+This dataset contains 18 years of spotify music data. It has 7192 observations and 30 variables. I will be using the data to try and look at how popular rap music is today and how its popularity has changed and increased over time. 
+
+```{r, echo=FALSE}
+spotifydata
+count(spotifydata)
+
+```
+
+
